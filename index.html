@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>We Value Your Feedback!</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+
+    .container {
+      text-align: center;
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 40px 20px;
+      margin: 0 20px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      animation: scaleUp 1s ease-in-out;
+    }
+
+    @keyframes scaleUp {
+      from {
+        transform: scale(0.9);
+        opacity: 0;
+      }
+
+      to {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    h2 {
+      font-size: 1.8em;
+      color: #e89037;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.2em;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    .review-btn {
+      background-color: #28a745;
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      font-size: 1.2em;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: transform 0.2s, background-color 0.3s ease;
+    }
+
+    .review-btn:hover {
+      background-color: #218838;
+      transform: scale(1.05);
+    }
+
+    .review-btn:active {
+      background-color: #1e7e34;
+      transform: scale(0.95);
+    }
+
+    .stars {
+      color: #FFD700;
+      font-size: 1.5em;
+      margin-bottom: 20px;
+      display: inline-block;
+      animation: glow 1s ease-in-out infinite alternate;
+    }
+
+    @keyframes glow {
+      from {
+        opacity: 0.3;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+
+    /* 动态星星评分 */
+    .star {
+      font-size: 2em;
+      color: #FFD700;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    .star:hover {
+      transform: scale(1.2);
+    }
+  </style>
+</head>
+
+<body>
+  <div style="margin-top: 60px;">
+    <img src="kola.png" alt="Momoto logo" style="margin: 0 auto; display: block;" width="150" height="150">
+    <div class="container">
+      <h2>Momoto look forward to your feedback!</h2>
+      <div class="stars">
+        <span class="star" data-value="1">★</span>
+        <span class="star" data-value="2">★</span>
+        <span class="star" data-value="3">★</span>
+        <span class="star" data-value="4">★</span>
+        <span class="star" data-value="5">★</span>
+      </div>
+      <p>Your opinion matters to us!</p>
+      <a href="https://search.google.com/local/writereview?placeid=ChIJIcqLsenPsGoRagAX09Z28Js" target="_blank">
+        <button class="review-btn">Leave a Review on Google</button>
+      </a>
+    </div>
+  </div>
+</body>
+
+</html>
